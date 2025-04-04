@@ -65,6 +65,12 @@ Cinema Ticket Booking System là một ứng dụng web cho phép người dùng
 
 11.**Customize seat trong một rạp chiếu phim**:
   ![image](https://github.com/user-attachments/assets/0fbca188-ac31-414c-9a28-aa3409cd1b86)
+12.**Thanh toán và đăng nhập vào hệ thống bằng blockchain**:
+  ![image](https://github.com/user-attachments/assets/ae2c37f3-545d-4c62-a890-5dd1519bfe62)
+13.**Tích hợp AI để trả lời các câu hỏi về trang web**:
+  ![image](https://github.com/user-attachments/assets/e9c37729-1bf1-4035-b3ab-9f139874c694)
+
+
 
 ## Cài đặt và chạy dự án  
 
