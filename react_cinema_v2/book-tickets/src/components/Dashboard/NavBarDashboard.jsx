@@ -9,6 +9,7 @@ import {
   MdScreenshotMonitor,
   MdOutlineAirlineSeatReclineNormal,
 } from "react-icons/md";
+import { SiHiveBlockchain } from "react-icons/si";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { IoMdQrScanner } from "react-icons/io";
 import { FaRegMessage } from "react-icons/fa6";
@@ -130,6 +131,19 @@ const NavBarDashboard = () => {
         >
           <MdOutlineAirlineSeatReclineNormal id="dashboard_icon" size={22} />
           <span className="text-white font-normal ">Seat types</span>
+        </NavLink>
+        <NavLink
+          to="/dashboard/paybyblockchain"
+          className={({ isActive }) =>
+            [
+              "flex gap-4 items-center p-2 rounded-lg",
+
+              isActive ? "bg-light-green/20 active" : "",
+            ].join(" ")
+          }
+        >
+          <SiHiveBlockchain id="dashboard_icon" size={22} />
+          <span className="text-white font-normal ">Pay by Blockchain</span>
         </NavLink>
         <NavLink
           to="/dashboard/scan"

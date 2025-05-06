@@ -79,15 +79,16 @@ const RightHeader = () => {
           </div>
           <HoverBar />
         </div>
-      ) : // <Link to="/login" className="flex items-center gap-2 relative group ">
-      //   <button
-      //     className="bg-[#da821b] clear-start p-2 rounded-lg text-white font-semibold
-      // cursor-pointer hover:bg-orange-600"
-      //   >
-      //     Sign In/ Sign up
-      //   </button>
-      // </Link>
-      null}
+      ) : (
+        <Link to="/login" className="flex items-center gap-2 relative group ">
+          <button
+            className="bg-[#da821b] clear-start p-2 rounded-lg text-white font-semibold
+       cursor-pointer hover:bg-orange-600"
+          >
+            Sign In/ Sign up
+          </button>
+        </Link>
+      )}
     </div>
   );
 };

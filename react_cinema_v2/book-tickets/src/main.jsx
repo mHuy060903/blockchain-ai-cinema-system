@@ -40,6 +40,7 @@ import Bookings from "./pages/Dashboard/Bookings.jsx";
 import DashboardChat from "./pages/Dashboard/DashboardChat.jsx";
 import Favorite from "./pages/Favorite.jsx";
 import AIAssitant from "./pages/AIAssistant.jsx";
+import PayByBlockChain from "./pages/Dashboard/PayByBlockChain.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -66,6 +67,7 @@ const router = createBrowserRouter(
         <Route path="screens" element={<Screens />} />
         <Route path="showtimes" element={<Showtimes />} />
         <Route path="seattypes" element={<SeatTypes />} />
+        <Route path="paybyblockchain" element={<PayByBlockChain />} />
         <Route path="settings" element={<Setting />} />
         <Route path="scan" element={<Scan />} />
         <Route path="message" element={<DashboardChat />} />

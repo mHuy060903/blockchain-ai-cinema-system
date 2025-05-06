@@ -3,7 +3,9 @@ import { FaArrowUp } from "react-icons/fa";
 import { toast } from "react-toastify";
 import AIChat from "../components/AIChat";
 import { usePostChat } from "../features/chat/usePostChat";
-
+import { TiTicket } from "react-icons/ti";
+import { IoMdContacts } from "react-icons/io";
+import { MdMovieEdit } from "react-icons/md";
 const AIAssitant = () => {
   const inputRef = useRef();
   const [chat, setChat] = useState([]);
@@ -23,11 +25,9 @@ const AIAssitant = () => {
       onSuccess: (dataSuccess) => {
         const message = dataSuccess.reply;
 
-        // Kiểm tra nếu tin nhắn có link phim
         const urlRegex = /(http:\/\/localhost:5173\/category\/movie\/\d+)/g;
         const links = message.match(urlRegex);
 
-        // Nếu có link, thay thế thành HTML <a>
         let formattedMessage = message;
         if (links) {
           links.forEach((link) => {
@@ -62,7 +62,20 @@ const AIAssitant = () => {
             isHTML={chatItem.isHTML}
           />
         ))}
-        <div ref={chatRef} />
+        {/* <div ref={chatRef} /> */}
+      </div>
+      <div className="grid grid-cols-3 gap-0.5">
+        <button className="col-span-1 flex items-center justify-center gap-2 rounded-2xl bg-black/5 p-1">
+          <TiTicket size={18} color="yellow" /> <span className="">How to book ticket</span>
+        </button>
+        <button className="col-span-1 flex items-center justify-center gap-2 rounded-2xl bg-black/5 p-1">
+          <IoMdContacts size={18} color="blue" />
+          <span className="">How to contact with admin</span>
+        </button>
+        <button className="col-span-1 flex items-center justify-center gap-2 rounded-2xl bg-black/5 p-1">
+          <MdMovieEdit size={18} color="red" />
+          <span className="">Recommend good movies</span>
+        </button>
       </div>
       <div>
         <form

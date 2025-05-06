@@ -1,5 +1,5 @@
 import { MdDeleteOutline } from "react-icons/md";
-import { CiEdit } from "react-icons/ci";
+
 import { useGetAllMovieSettings } from "../../features/DashboardSettings/useGetAllMovieSettings";
 import Loader from "../../components/Loader";
 import { FaPlus } from "react-icons/fa";
@@ -13,6 +13,7 @@ import { useQueryClient } from "@tanstack/react-query";
 import { toast } from "react-toastify";
 import { useDeleteMovieSetting } from "../../features/DashboardSettings/useDeleteMovieSetting";
 import ModelConfirm from "../../components/ModelConfirm";
+
 const Settings = () => {
   const [isAddNow, setIsAddNow] = useState(true);
   const [isOpenModel, setIsOpenModel] = useState(false);
@@ -21,6 +22,7 @@ const Settings = () => {
 
   const queryClient = useQueryClient();
 
+  
   const {
     register,
     handleSubmit,
